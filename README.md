@@ -3,5 +3,4 @@ In this project, you will learn how to create a custom Animated Bottom Navigatio
 
 Please check out my youtube channel (Aditya Tech Developers) for more interesting content.
 
-Tutorial of the project is uploaded here.
-https://youtu.be/6Q6DROsLDEI
+Tutorial of the project is uploaded here: https://youtu.be/6Q6DROsLDEI
