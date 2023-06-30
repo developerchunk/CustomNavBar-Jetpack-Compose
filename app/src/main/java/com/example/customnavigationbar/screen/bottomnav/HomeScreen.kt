@@ -16,19 +16,24 @@ import com.google.accompanist.pager.rememberPagerState
 @Composable
 fun HomeScreen() {
 
+    // declaring the names of TabLayout screens
+    val tabScreens = listOf("HomeScreen", "MessageScreen")
+    val pagerState = rememberPagerState()
+
     Column(
         modifier = Modifier.fillMaxSize()
     ) {
 
-        val tabTitles = listOf("HomeScreen", "MessageScreen")
-        val pagerState = rememberPagerState()
-
+        // the Swipe-able Horizontal Tab Layout
         HorizontalPager(
-            count = tabTitles.size,
+            count = tabScreens.size,
             state = pagerState,
         ) { tabIndex ->
+            // Initializing the screens/composable of each Screen
             when(tabIndex) {
+                // first screen
                 0 -> TabHomeScreen()
+                // second screen
                 1 -> TabMessageScreen()
             }
         }
@@ -40,9 +45,11 @@ fun TabHomeScreen() {
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .padding(30.dp)) {
+        .padding(30.dp)
+    ) {
 
         Text(text = "Home Screen", fontSize = 40.sp)
+
     }
 
 }
@@ -52,8 +59,11 @@ fun TabMessageScreen() {
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .padding(30.dp)) {
+        .padding(30.dp)
+    ) {
+
         Text(text = "Message Screen", fontSize = 40.sp)
+
     }
 
 }
