@@ -1,4 +1,4 @@
-package com.example.customnavigationbar.bottomnav
+package com.example.customnavigationbar.screen
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
@@ -23,14 +23,18 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.customnavigationbar.ui.theme.Purple200
+import com.example.customnavigationbar.bottomnav.BottomBarScreen
+import com.example.customnavigationbar.bottomnav.BottomNavGraph
 import com.example.customnavigationbar.ui.theme.Purple500
 
 @Composable
-fun BottomNav() {
+fun MainScreen() {
     val navController = rememberNavController()
 
     Scaffold(
+        modifier = Modifier.fillMaxSize(),
+        drawerElevation = 0.dp,
+        backgroundColor = Color.White,
         bottomBar = { BottomBar(navController = navController) }
     ) {
         BottomNavGraph(navController = navController)
@@ -51,7 +55,7 @@ fun BottomBar(navController: NavHostController) {
     Row(
         modifier = Modifier
             .padding(start = 10.dp, end = 10.dp, top = 8.dp, bottom = 8.dp)
-            .background(Color.White)
+            .background(Color.Transparent)
             .fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment = Alignment.CenterVertically
@@ -68,7 +72,7 @@ fun BottomBar(navController: NavHostController) {
 }
 
 @Composable
-fun RowScope.AddItem(
+fun AddItem(
     screen: BottomBarScreen,
     currentDestination: NavDestination?,
     navController: NavHostController
@@ -117,7 +121,7 @@ fun RowScope.AddItem(
 @Composable
 @Preview
 fun BottomNavPreview() {
-    BottomNav()
+    MainScreen()
 }
 
 

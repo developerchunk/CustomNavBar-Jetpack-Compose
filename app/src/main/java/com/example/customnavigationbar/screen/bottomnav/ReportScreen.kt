@@ -1,4 +1,4 @@
-package com.example.customnavigationbar.screen
+package com.example.customnavigationbar.screen.bottomnav
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

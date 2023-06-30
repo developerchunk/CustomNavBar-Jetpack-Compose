@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../layout/compose-model-1657085232212.xml" value="0.22685185185185186" />
+        <entry key="../../../../../../layout/compose-model-1659065207139.xml" value="0.25" />
+        <entry key="../../../../../../layout/compose-model-1663130553369.xml" value="0.165" />
+        <entry key="../../../../../../layout/compose-model-1663251104133.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/drawable/ic_bottom_home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_bottom_profile.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable/ic_bottom_report.xml" value="0.1225" />
@@ -11,7 +14,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
