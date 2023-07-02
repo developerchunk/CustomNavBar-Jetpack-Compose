@@ -43,6 +43,9 @@ import kotlinx.coroutines.launch
 @Composable
 fun BottomHomeScreen() {
 
+    // Special thanks to Burak(itnext.io) on Medium for the detailed article on TabLayout
+    // link to article- https://itnext.io/tabs-tablayout-in-jetpack-compose-cd1f84d3a381
+
     //pagerState will be necessary to remember & keep the state of the pager.
     //coroutineScope will be used for pagerState scrolling.
     val pagerState = rememberPagerState()
