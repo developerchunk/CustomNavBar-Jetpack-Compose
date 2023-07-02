@@ -46,6 +46,10 @@ fun BottomHomeScreen() {
     // Special thanks to Burak(itnext.io) on Medium for the detailed article on TabLayout
     // link to article- https://itnext.io/tabs-tablayout-in-jetpack-compose-cd1f84d3a381
 
+    // first add the dependencies
+    // implementation "com.google.accompanist:accompanist-pager:0.21.2-beta"
+    // implementation "com.google.accompanist:accompanist-pager-indicators:0.21.2-beta"
+
     //pagerState will be necessary to remember & keep the state of the pager.
     //coroutineScope will be used for pagerState scrolling.
     val pagerState = rememberPagerState()
